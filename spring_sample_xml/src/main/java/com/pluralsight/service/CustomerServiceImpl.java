@@ -8,6 +8,14 @@ import com.pluralsight.repository.CustomerRepository;
 public class CustomerServiceImpl implements CustomerService {
 	private CustomerRepository customerRepository;
 
+	public CustomerServiceImpl() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public CustomerServiceImpl(CustomerRepository customerRepository) {
+		this.customerRepository = customerRepository;
+	}
+	
 	/*
 	 * (non-Javadoc)
 	 * 
